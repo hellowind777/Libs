@@ -84,7 +84,7 @@ local byte_A = string_byte('A')
 local byte_Z = string_byte('Z')
 local byte_fake_s = string_byte('\015')
 local byte_fake_S = string_byte('\020')
-local byte_deg = string_byte('°')
+local byte_deg = string_byte('Â°')
 local byte_percent = string_byte('%') -- 37
 
 local byte_b = string_byte('b')
@@ -165,7 +165,7 @@ do
 		local a = math_floor(hash / 65536)
 		local b = math_floor(math_mod(hash / 256, 256))
 		local c = math_mod(hash, 256)
-		-- \000, \n, |, °, s, S, \015, \020
+		-- \000, \n, |, Â°, s, S, \015, \020
 		if a == 0 or a == 10 or a == 124 or a == 176 or a == 115 or a == 83 or a == 15 or a == 20 or a == 37 then
 			a = a + 1
 			-- \t, \255
@@ -206,19 +206,19 @@ end
 
 -- Package a message for transmission
 local function Encode(text, drunk)
-	text = string_gsub(text, "°", "°±")
+	text = string_gsub(text, "Â°", "Â°Â±")
 	if drunk then
-		text = string_gsub(text, "\020", "°\021")
-		text = string_gsub(text, "\015", "°\016")
+		text = string_gsub(text, "\020", "Â°\021")
+		text = string_gsub(text, "\015", "Â°\016")
 		text = string_gsub(text, "S", "\020")
 		text = string_gsub(text, "s", "\015")
 		-- change S and s to a different set of character bytes.
 	end
-	text = string_gsub(text, "\255", "°\254") -- \255 (this is here because \000 is more common)
+	text = string_gsub(text, "\255", "Â°\254") -- \255 (this is here because \000 is more common)
 	text = string_gsub(text, "%z", "\255") -- \000
-	text = string_gsub(text, "\010", "°\011") -- \n
-	text = string_gsub(text, "\124", "°\125") -- |
-	text = string_gsub(text, "%%", "°\038") -- %
+	text = string_gsub(text, "\010", "Â°\011") -- \n
+	text = string_gsub(text, "\124", "Â°\125") -- |
+	text = string_gsub(text, "%%", "Â°\038") -- %
 	-- encode assorted prohibited characters
 	return text
 end
@@ -227,8 +227,8 @@ local func
 -- Clean a received message
 local function Decode(text, drunk)
 	if drunk then
-		local _,x = string_find(text, "^.*°")
-		text = string_gsub(text, "^(.*)°.-$", "%1")
+		local _,x = string_find(text, "^.*Â°")
+		text = string_gsub(text, "^(.*)Â°.-$", "%1")
 		-- get rid of " ...hic!"
 	end
 	if not func then
@@ -237,8 +237,8 @@ local function Decode(text, drunk)
 				return "\015"
 			elseif text == "\021" then
 				return "\020"
-			elseif text == "±" then
-				return "°"
+			elseif text == "Â±" then
+				return "Â°"
 			elseif text == "\254" then
 				return "\255"
 			elseif text == "\011" then
@@ -255,7 +255,7 @@ local function Decode(text, drunk)
 		text = string_gsub(text, "\020", "S")
 		text = string_gsub(text, "\015", "s")
 	end
-	text = string_gsub(text, drunk and "°([\016\021±\254\011\125\038])" or "°([±\254\011\125\038])", func)
+	text = string_gsub(text, drunk and "Â°([\016\021Â±\254\011\125\038])" or "Â°([Â±\254\011\125\038])", func)
 	-- remove the hidden character and refix the prohibited characters.
 	return text
 end
@@ -1252,42 +1252,42 @@ local id = byte_Z
 
 local function encodedChar(x)
 	if x == 10 then
-		return "°\011"
+		return "Â°\011"
 	elseif x == 0 then
 		return "\255"
 	elseif x == 255 then
-		return "°\254"
+		return "Â°\254"
 	elseif x == 124 then
-		return "°\125"
+		return "Â°\125"
 	elseif x == byte_s then
 		return "\015"
 	elseif x == byte_S then
 		return "\020"
 	elseif x == 15 then
-		return "°\016"
+		return "Â°\016"
 	elseif x == 20 then
-		return "°\021"
+		return "Â°\021"
 	elseif x == byte_deg then
-		return "°±"
+		return "Â°Â±"
 	elseif x == 37 then
-		return "°\038"
+		return "Â°\038"
 	end
 	return string_char(x)
 end
 
 local function soberEncodedChar(x)
 	if x == 10 then
-		return "°\011"
+		return "Â°\011"
 	elseif x == 0 then
 		return "\255"
 	elseif x == 255 then
-		return "°\254"
+		return "Â°\254"
 	elseif x == 124 then
-		return "°\125"
+		return "Â°\125"
 	elseif x == byte_deg then
-		return "°±"
+		return "Â°Â±"
 	elseif x == 37 then
-		return "°\038"
+		return "Â°\038"
 	end
 	return string_char(x)
 end
@@ -1343,10 +1343,10 @@ local function SendMessage(prefix, priority, distribution, person, message, text
 				last = next
 			end
 			if distribution == "WHISPER" then
-				bit = "/" .. prefix .. "\t" .. id .. encodedChar(i) .. encodedChar(max) .. "\t" .. bit .. "°"
+				bit = "/" .. prefix .. "\t" .. id .. encodedChar(i) .. encodedChar(max) .. "\t" .. bit .. "Â°"
 				ChatThrottleLib:SendChatMessage(priority, prefix, bit, "WHISPER", nil, person)
 			elseif distribution == "GLOBAL" or distribution == "ZONE" or distribution == "CUSTOM" then
-				bit = prefix .. "\t" .. id .. encodedChar(i) .. encodedChar(max) .. "\t" .. bit .. "°"
+				bit = prefix .. "\t" .. id .. encodedChar(i) .. encodedChar(max) .. "\t" .. bit .. "Â°"
 				local channel
 				if distribution == "GLOBAL" then
 					channel = "AceComm"
@@ -1369,11 +1369,11 @@ local function SendMessage(prefix, priority, distribution, person, message, text
 		return good
 	else
 		if distribution == "WHISPER" then
-			message = "/" .. prefix .. "\t" .. id .. string_char(1) .. string_char(1) .. "\t" .. message .. "°"
+			message = "/" .. prefix .. "\t" .. id .. string_char(1) .. string_char(1) .. "\t" .. message .. "Â°"
 			ChatThrottleLib:SendChatMessage(priority, prefix, message, "WHISPER", nil, person)
 			return true
 		elseif distribution == "GLOBAL" or distribution == "ZONE" or distribution == "CUSTOM" then
-			message = prefix .. "\t" .. id .. string_char(1) .. string_char(1) .. "\t" .. message .. "°"
+			message = prefix .. "\t" .. id .. string_char(1) .. string_char(1) .. "\t" .. message .. "Â°"
 			local channel
 			if distribution == "GLOBAL" then
 				channel = "AceComm"

@@ -301,6 +301,10 @@ function DruidManaLib_OnUpdate()
 end
 
 function DruidManaLib:GetMana()
+--增加SuperWow兼容，SuperWow自带德鲁伊人形法力值反馈
+    if CheckSuperWow() then
+        _,curMana=UnitMana("player")
+    end
 	return curMana, maxMana
 end
 

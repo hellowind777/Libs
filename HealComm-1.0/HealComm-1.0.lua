@@ -81,7 +81,171 @@ L:RegisterTranslations("enUS", function() return {
 	["Arathi Basin"] = true,
 	["Alterac Valley"] = true,
 } end)
-
+L:RegisterTranslations("ruRU", function() return {
+	["Libram of Divinity"] = "Манускрипт божественности",
+	["Libram of Light"] = "Манускрипт света",
+	["Set: Increases the duration of your Rejuvenation spell by 3 sec."] = "Комплект: Увеличение длительности заклинания \"Омоложение\" на 3 сек.", -- T2
+	["Set: Increases the duration of your Renew spell by 3 sec."] = "Комплект: Увеличение длительности заклинания \"Обновление\" на 3 сек.", -- T2.5
+	["Totem of Life"] = "Тотем жизни",
+	["Totem of Sustaining"] = "Тотем воодушевления",
+	["^Corpse of (.+)$"] = "^Труп (.+)$",
+	["Holy Light"] = "Свет небес",
+	["Flash of Light"] = "Улучшенная вспышка света",
+	["Lesser Heal"] = "Малое исцеление",
+	["Heal"] = "Исцеление",
+	["Greater Heal"] = "Великое исцеление",
+	["Flash Heal"] = "Быстрое исцеление",
+	["Prayer of Healing"] = "Молитва исцеления",
+	["Lesser Healing Wave"] = "Малая волна исцеления",
+	["Healing Wave"] = "Волна исцеления",
+	["Chain Heal"] = "Цепное исцеление",
+	["Healing Touch"] = "Целительное прикосновение",
+	["Regrowth"] = "Восстановление",
+	["Resurrection"] = "Воскрешение",
+	["Rebirth"] = "Возрождение",
+	["Redemption"] = "Искупление",
+	["Ancestral Spirit"] = "Дух предков",
+	["Renew"] = "Обновление",
+	["Rejuvenation"] = "Омоложение",
+	["Power Infusion"] = "Придание сил",
+	["Divine Favor"] = "Божественное одобрение",
+	["Nature Aligned"] = "Упорядочение Природы",
+	["Crusader's Wrath"] = "Гнев рыцаря Света",
+	["The Furious Storm"] = "Яростный шторм",
+	["Holy Power"] = "Священная сила",
+	["Prayer Beads Blessing"] = "Благословение четок",
+	["Chromatic Infusion"] = "Цветной настой",
+	["Ascendance"] = "Господство",
+	["Ephemeral Power"] = "Эфемерная Власть",
+	["Unstable Power"] = "Изменчивая сила",
+	["Healing of the Ages"] = "Исцеление Эпох",
+	["Essence of Sapphiron"] = "Сущность Сапфирона",
+	["The Eye of the Dead"] = "Глаз Мертвого",
+	["Mortal Strike"] = "Смертельный удар",
+	["Wound Poison"] = "Нейтрализующий яд",
+	["Curse of the Deadwood"] = "Проклятие Мертвого Леса",
+	["Veil of Shadow"] = "Пелена Тени",
+	["Gehennas' Curse"] = "Проклятие Гееннаса",
+	["Mortal Wound"] = "Смертоносная рана",
+	["Necrotic Poison"] = "Некротический яд",
+	["Blood Fury"] = "Кровавое неистовство",
+	["Necrotic Aura"] = "Мертвенная аура",
+	["Blessing of Light"] = "Благословение Света",
+	["Healing Way"] = "Путь исцеления",
+	["Warsong Gulch"] = "Ущелье Песни Войны",
+	["Arathi Basin"] = "Низина Арати",
+	["Alterac Valley"] = "Альтеракская долина",
+} end)
+L:RegisterTranslations("deDE", function() return {
+	["Libram of Divinity"] = "Buchband der Offenbarung",
+	["Libram of Light"] = "Buchband des Lichts",
+	["Set: Increases the duration of your Rejuvenation spell by 3 sec."] = "Set: Erh\195\182ht die Dauer Eures Zaubers \'Verj\195\188ngung\' um 3 Sek.",
+	["Set: Increases the duration of your Renew spell by 3 sec."] = "Set: Erh\195\182ht die Dauer Eures Zaubers 'Erneuerung' um 3 Sek.",
+	["Totem of Life"] = "Totem des Lebens",
+	["Totem of Sustaining"] = "Totem der Erhaltung",
+	["^Corpse of (.+)$"] = "^Leichnam von (.+)$",
+	["Holy Light"] = "Heiliges Licht",
+	["Flash of Light"] = "Lichtblitz",
+	["Lesser Heal"] = "Geringes Heilen",
+	["Heal"] = "Heilen",
+	["Greater Heal"] = "Große Heilung",
+	["Flash Heal"] = "Blitzheilung",
+	["Prayer of Healing"] = "Gebet der Heilung",
+	["Lesser Healing Wave"] = "Geringe Welle der Heilung",
+	["Healing Wave"] = "Welle der Heilung",
+	["Chain Heal"] = "Kettenheilung",
+	["Healing Touch"] = "Heilende Ber\195\188hrung",
+	["Regrowth"] = "Nachwachsen",
+	["Resurrection"] = "Auferstehung",
+	["Rebirth"] = "Wiedergeburt",
+	["Redemption"] = "Erl\195\182sung",
+	["Ancestral Spirit"] = "Geist der Ahnen",
+	["Renew"] = "Erneuerung",
+	["Rejuvenation"] = "Verj\195\188ngung",
+	["Power Infusion"] = "Seele der Macht",
+	["Divine Favor"] = "G\195\182ttliche Gunst",
+	["Nature Aligned"] = "Naturverbundenheit",
+	["Crusader's Wrath"] = "Zorn des Kreuzfahrers",
+	["The Furious Storm"] = "Der wilde Sturm",
+	["Holy Power"] = "Heilige Kraft",
+	["Prayer Beads Blessing"] = "Segen der Gebetsperlen",
+	["Chromatic Infusion"] = "Erf\195\188llt mit chromatischer Macht",
+	["Ascendance"] = "Überlegenheit",
+	["Ephemeral Power"] = "Ephemere Macht",
+	["Unstable Power"] = "Instabile Macht",
+	["Healing of the Ages"] = "Heilung der Urzeiten",
+	["Essence of Sapphiron"] = "Essenz Saphirons",
+	["The Eye of the Dead"] = "Das Auge des Todes",
+	["Mortal Strike"] = "T\195\182dlicher Stoß",
+	["Wound Poison"] = "Wundgift",
+	["Curse of the Deadwood"] = "Fluch der Totenwaldfelle",
+	["Veil of Shadow"] = "Schattenschleier",
+	["Gehennas' Curse"] = "Gehennas' Fluch",
+	["Mortal Wound"] = "Trauma",
+	["Necrotic Poison"] = "Nekrotisches Gift",
+	["Blood Fury"] = "Kochendes Blut",
+	["Necrotic Aura"] = "Nekrotische Aura",
+	["Blessing of Light"] = "Segen des Lichts",
+	["Healing Way"] = "Pfad der Heilung",
+	["Warsong Gulch"] = "Warsongschlucht",
+	["Arathi Basin"] = "Arathibecken",
+	["Alterac Valley"] = "Alteractal",
+} end)
+L:RegisterTranslations("frFR", function() return {
+	["Libram of Divinity"] = "Libram de divinit\195\169",
+	["Libram of Light"] = "Libram de lumi\195\168re",
+	["Set: Increases the duration of your Rejuvenation spell by 3 sec."] = "Set: Augmente la dur\195\169e de votre sort R\195\169cup\195\169ration de 3 s.",
+	["Set: Increases the duration of your Renew spell by 3 sec."] = "Set: Augmente la dur\195\169e de votre sort R\195\169novation de 3 s.",	
+	["Totem of Life"] = "Totem de vie",
+	["Totem of Sustaining"] = "Totem de soutien",
+	["^Corpse of (.+)$"] = "^Cadavre |2 (.+)$",
+	["Holy Light"] = "Lumi\195\168re sacr\195\169e",
+	["Flash of Light"] = "Eclair lumineux",
+	["Lesser Heal"] = "Soins inf\195\169rieurs",
+	["Heal"] = "Soins",
+	["Greater Heal"] = "Soins sup\195\169rieurs",
+	["Flash Heal"] = "Soins rapides",
+	["Prayer of Healing"] = "Pri\195\168re de soins",
+	["Lesser Healing Wave"] = "Vague de soins inf\195\169rieurs",
+	["Healing Wave"] = "Vague de soins",
+	["Chain Heal"] = "Salve de gu\195\169rison",
+	["Healing Touch"] = "Toucher gu\195\169risseur",
+	["Regrowth"] = "R\195\169tablissement",
+	["Resurrection"] = "R\195\169surrection",
+	["Rebirth"] = "Renaissance",
+	["Redemption"] = "R\195\169demption",
+	["Ancestral Spirit"] = "Esprit ancestral",
+	["Renew"] = "R\195\169novation",
+	["Rejuvenation"] = "R\195\169cup\195\169ration",
+	["Power Infusion"] = "Infusion de puissance",
+	["Divine Favor"] = "Faveur divine",
+	["Nature Aligned"] = "Alignement sur la nature",
+	["Crusader's Wrath"] = "Col\195\168re du crois\195\169",
+	["The Furious Storm"] = "La temp\195\170te furieuse",
+	["Holy Power"] = "Puissance sacr\195\169e",
+	["Prayer Beads Blessing"] = "B\195\169n\195\169diction du chapelet",
+	["Chromatic Infusion"] = "Infusion chromatique",
+	["Ascendance"] = "Ascendance",
+	["Ephemeral Power"] = "Puissance \195\169ph\195\169m\195\168re",
+	["Unstable Power"] = "Puissance instable",
+	["Healing of the Ages"] = "Soins des \195\162ges",
+	["Essence of Sapphiron"] = "Essence de Saphiron",
+	["The Eye of the Dead"] = "L'Oeil du mort",
+	["Mortal Strike"] = "Frappe mortelle",
+	["Wound Poison"] = "Poison douloureux",
+	["Curse of the Deadwood"] = "Mal\195\169diction des Mort-bois",
+	["Veil of Shadow"] = "Voile de l'ombre",
+	["Gehennas' Curse"] = "Mal\195\169diction de Gehennas",
+	["Mortal Wound"] = "Blessures mortelles",
+	["Necrotic Poison"] = "Poison n\195\169crotique",
+	["Blood Fury"] = "Fureur sanguinaire",
+	["Necrotic Aura"] = "Aura n\195\169crotique",
+	["Blessing of Light"] = "B\195\169n\195\169diction de lumi\195\168re",
+	["Healing Way"] = "Flots de soins",
+	["Warsong Gulch"] = "Goulet des Warsong",
+	["Arathi Basin"] = "Bassin d'Arathi",
+	["Alterac Valley"] = "Vall\195\169e d'Alterac",
+} end)
 L:RegisterTranslations("zhCN", function() return {
 	["Libram of Divinity"] = "神性圣契",
 	["Libram of Light"] = "光明圣契",
@@ -137,6 +301,61 @@ L:RegisterTranslations("zhCN", function() return {
 	["Arathi Basin"] = "阿拉希盆地",
 	["Alterac Valley"] = "奥特兰克山谷",
 } end)
+L:RegisterTranslations("koKR", function() return {
+	["Libram of Divinity"] = "신앙의 성서",
+	["Libram of Light"] = "빛의 성서",
+	["Set: Increases the duration of your Rejuvenation spell by 3 sec."] = true, --needs translation
+	["Set: Increases the duration of your Renew spell by 3 sec."] = true, --needs translation
+	["Totem of Life"] = "생명의 토템",
+	["Totem of Sustaining"] = "지탱의 토템",
+	["^Corpse of (.+)$"] = true, --needs translation
+	["Holy Light"] = "성스러운 빛",
+	["Flash of Light"] = "빛의 섬광",
+	["Lesser Heal"] = "하급 치유",
+	["Heal"] = "치유",
+	["Greater Heal"] = "상급 치유",
+	["Flash Heal"] = "순간 치유",
+	["Prayer of Healing"] = "치유의 기원",
+	["Lesser Healing Wave"] = "하급 치유의 물결",
+	["Healing Wave"] = "치유의 물결",
+	["Chain Heal"] = "연쇄 치유",
+	["Healing Touch"] = "치유의 손길",
+	["Regrowth"] = "재생",
+	["Resurrection"] = "부활",
+	["Rebirth"] = "환생",
+	["Redemption"] = "구원",
+	["Ancestral Spirit"] = "고대의 영혼",
+	["Renew"] = "소생",
+	["Rejuvenation"] = "회복",
+	["Power Infusion"] = "마력 주입",
+	["Divine Favor"] = "신의 은총",
+	["Nature Aligned"] = "자연 동화",
+	["Crusader's Wrath"] = "성전사의 격노",
+	["The Furious Storm"] = "휘몰아치는 폭풍",
+	["Holy Power"] = "신성 마법 강화",
+	["Prayer Beads Blessing"] = "기원의 묵주의 축복",
+	["Chromatic Infusion"] = "오색 용력",
+	["Ascendance"] = "승리의 기세",
+	["Ephemeral Power"] = "마력의 힘",
+	["Unstable Power"] = "불안정한 마력",
+	["Healing of the Ages"] = "세월의 치유",
+	["Essence of Sapphiron"] = "사피론의 정수",
+	["The Eye of the Dead"] = "사자의 눈",
+	["Mortal Strike"] = "죽음의 일격",
+	["Wound Poison"] = "상처 감염 독",
+	["Curse of the Deadwood"] = "마른가지의 저주",
+	["Veil of Shadow"] = "암흑의 장막",
+	["Gehennas' Curse"] = "게헨나스의 저주",
+	["Mortal Wound"] = "죽음의 상처",
+	["Necrotic Poison"] = "부패의 독",
+	["Blood Fury"] = "피의 격노",
+	["Necrotic Aura"] = "괴저 오라",
+	["Blessing of Light"] = "빛의 축복",
+	["Healing Way"] = "치유의 길",
+	["Warsong Gulch"] = "전쟁노래 협곡",
+	["Arathi Basin"] = "아라시 분지",
+	["Alterac Valley"] = "알터랙 계곡",
+} end)
 ------------------------------------------------
 -- activate, enable, disable
 ------------------------------------------------
@@ -187,6 +406,10 @@ local function external(self, major, instance)
 		self:RegisterEvent("UNIT_AURA")
 		self:RegisterEvent("UNIT_HEALTH")
 		self:RegisterEvent("PLAYER_LOGIN")
+		
+		--trying to fix the sometimes nt properly cleared incoming heals
+		--self:RegisterEvent("PLAYER_LEAVE_COMBAT")
+		
 		self:TriggerEvent("HealComm_Enabled")
 	end
 	if major == "AceHook-2.1" then
@@ -194,6 +417,11 @@ local function external(self, major, instance)
 		AceHook:embed(self)
 	end
 end
+
+--clear out all incoming heal at combat end to fix rare stuck incoming heal bug
+--function HealComm:PLAYER_LEAVE_COMBAT()
+--	self:CancelAllScheduledEvents()
+--end
 
 function HealComm:PLAYER_LOGIN()
 	self:HookScript(WorldFrame, "OnMouseDown", "OnMouseDown")
@@ -226,48 +454,69 @@ end
 HealComm.Spells = {
 	[L["Holy Light"]] = {
 		[1] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
-			return (44*hlMod+(((2.5/3.5) * SpellPower)*0.1))
+			--return (44*hlMod+(((2.5/3.5) * SpellPower)*0.1)) --custom_turtle_begin
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
+			return (44*hlMod+(((2.5/3.5) * SpellPower)))
 		end;
 		[2] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
-			return (88*hlMod+(((2.5/3.5) * SpellPower)*0.224))
+			--return (88*hlMod+(((2.5/3.5) * SpellPower)*0.224)) --custom_turtle_begin
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
+			return (88*hlMod+(((2.5/3.5) * SpellPower)))
 		end;
 		[3] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
-			return (174*hlMod+(((2.5/3.5) * SpellPower)*0.476))
+			--return (174*hlMod+(((2.5/3.5) * SpellPower)*0.476)) --custom_turtle_begin
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
+			return (174*hlMod+(((2.5/3.5) * SpellPower)))
 		end;
 		[4] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
 			return (334*hlMod+((2.5/3.5) * SpellPower))
 		end;
 		[5] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
 			return (522*hlMod+((2.5/3.5) * SpellPower))
 		end;
 		[6] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
 			return (740*hlMod+((2.5/3.5) * SpellPower))
 		end;
 		[7] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
 			return (1000*hlMod+((2.5/3.5) * SpellPower))
 		end;
 		[8] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
 			return (1318*hlMod+((2.5/3.5) * SpellPower))
 		end;
 		[9] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
 			return (1681*hlMod+((2.5/3.5) * SpellPower))
 		end;
 	};
@@ -278,13 +527,16 @@ HealComm.Spells = {
 				local _,_,itemstring = string.find(GetInventoryItemLink("player",GetInventorySlotInfo("RangedSlot")), "|H(.+)|h")
 				local name = GetItemInfo(itemstring)
 				if name == 	L["Libram of Divinity"] then
-					lp = 53
+					lp = 28
 				elseif name == L["Libram of Light"] then
-					lp = 83
+					lp = 41
 				end
+				lp = lp + itemBonus:GetBonus("IMPFLASHOFLIGHT") --for new twow t3 set bonus
 			end
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
 			return (68*hlMod+lp+((1.5/3.5) * SpellPower))
 		end;
 		[2] = function (SpellPower)
@@ -293,13 +545,16 @@ HealComm.Spells = {
 				local _,_,itemstring = string.find(GetInventoryItemLink("player",GetInventorySlotInfo("RangedSlot")), "|H(.+)|h")
 				local name = GetItemInfo(itemstring)
 				if name == 	L["Libram of Divinity"] then
-					lp = 53
+					lp = 28
 				elseif name == L["Libram of Light"] then
-					lp = 83
+					lp = 41
 				end
+				lp = lp + itemBonus:GetBonus("IMPFLASHOFLIGHT") --for new twow t3 set bonus
 			end
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
 			return (104*hlMod+lp+((1.5/3.5) * SpellPower))
 		end;
 		[3] = function (SpellPower)
@@ -308,13 +563,16 @@ HealComm.Spells = {
 				local _,_,itemstring = string.find(GetInventoryItemLink("player",GetInventorySlotInfo("RangedSlot")), "|H(.+)|h")
 				local name = GetItemInfo(itemstring)
 				if name == 	L["Libram of Divinity"] then
-					lp = 53
+					lp = 28
 				elseif name == L["Libram of Light"] then
-					lp = 83
+					lp = 41
 				end
+				lp = lp + itemBonus:GetBonus("IMPFLASHOFLIGHT") --for new twow t3 set bonus
 			end
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
 			return (155*hlMod+lp+((1.5/3.5) * SpellPower))
 		end;
 		[4] = function (SpellPower)
@@ -323,13 +581,16 @@ HealComm.Spells = {
 				local _,_,itemstring = string.find(GetInventoryItemLink("player",GetInventorySlotInfo("RangedSlot")), "|H(.+)|h")
 				local name = GetItemInfo(itemstring)
 				if name == 	L["Libram of Divinity"] then
-					lp = 53
+					lp = 28
 				elseif name == L["Libram of Light"] then
-					lp = 83
+					lp = 41
 				end
+				lp = lp + itemBonus:GetBonus("IMPFLASHOFLIGHT") --for new twow t3 set bonus
 			end
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
 			return (210*hlMod+lp+((1.5/3.5) * SpellPower))
 		end;
 		[5] = function (SpellPower)
@@ -338,13 +599,16 @@ HealComm.Spells = {
 				local _,_,itemstring = string.find(GetInventoryItemLink("player",GetInventorySlotInfo("RangedSlot")), "|H(.+)|h")
 				local name = GetItemInfo(itemstring)
 				if name == 	L["Libram of Divinity"] then
-					lp = 53
+					lp = 28
 				elseif name == L["Libram of Light"] then
-					lp = 83
+					lp = 41
 				end
+				lp = lp + itemBonus:GetBonus("IMPFLASHOFLIGHT") --for new twow t3 set bonus
 			end
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
 			return (284*hlMod+lp+((1.5/3.5) * SpellPower))
 		end;
 		[6] = function (SpellPower)
@@ -353,13 +617,16 @@ HealComm.Spells = {
 				local _,_,itemstring = string.find(GetInventoryItemLink("player",GetInventorySlotInfo("RangedSlot")), "|H(.+)|h")
 				local name = GetItemInfo(itemstring)
 				if name == 	L["Libram of Divinity"] then
-					lp = 53
+					lp = 28
 				elseif name == L["Libram of Light"] then
-					lp = 83
+					lp = 41
 				end
+				lp = lp + itemBonus:GetBonus("IMPFLASHOFLIGHT") --for new twow t3 set bonus
 			end
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
 			return (364*hlMod+lp+((1.5/3.5) * SpellPower))
 		end;
 		[7] = function (SpellPower)
@@ -368,66 +635,49 @@ HealComm.Spells = {
 				local _,_,itemstring = string.find(GetInventoryItemLink("player",GetInventorySlotInfo("RangedSlot")), "|H(.+)|h")
 				local name = GetItemInfo(itemstring)
 				if name == 	L["Libram of Divinity"] then
-					lp = 53
+					lp = 28
 				elseif name == L["Libram of Light"] then
-					lp = 83
+					lp = 41
 				end
+				lp = lp + itemBonus:GetBonus("IMPFLASHOFLIGHT") --for new twow t3 set bonus
 			end
-			local _,_,_,_,talentRank,_ = GetTalentInfo(1,5)
+			local _,_,_,_,talentRank,_ = GetTalentInfo(1,6)
 			local hlMod = 4*talentRank/100 + 1
-			return (481*hlMod+lp+((1.5/3.5) * SpellPower))
+			_,_,_,_,talentRank,_ = GetTalentInfo(1,12);
+			SpellPower = SpellPower + UnitArmor("player") *talentRank/100;
+			return (451*hlMod+lp+((1.5/3.5) * SpellPower))
 		end;
 	};
 	[L["Healing Wave"]] = {
 		[1] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (40*pMod+(((1.5/3.5) * SpellPower)*0.22))
+			return (40+(((1.5/3.5) * SpellPower)*0.2875))
 		end;
 		[2] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (72*pMod+(((2/3.5) * SpellPower)*0.38))
+			return (72+(((2/3.5) * SpellPower)*0.475))
 		end;
 		[3] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (143*pMod+(((2.5/3.5) * SpellPower)*0.446))
+			return (143+(((2.5/3.5) * SpellPower)*0.7))
 		end;
 		[4] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (293*pMod+(((3/3.5) * SpellPower)*0.7))
+			return (293+(((3/3.5) * SpellPower)*0.925))
 		end;
 		[5] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (409*pMod+((3/3.5) * SpellPower))
+			return (409+((3/3.5) * SpellPower))
 		end;
 		[6] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (580*pMod+((3/3.5) * SpellPower))
+			return (580+((3/3.5) * SpellPower))
 		end;
 		[7] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (798*pMod+((3/3.5) * SpellPower))
+			return (798+((3/3.5) * SpellPower))
 		end;
 		[8] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (1093*pMod+((3/3.5) * SpellPower))
+			return (1093+((3/3.5) * SpellPower))
 		end;
 		[9] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (1465*pMod+((3/3.5) * SpellPower))
+			return (1465+((3/3.5) * SpellPower))
 		end;
 		[10] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (1736*pMod+((3/3.5) * SpellPower))
+			return (1736+((3/3.5) * SpellPower))
 		end;
 	};
 	[L["Lesser Healing Wave"]] = {
@@ -437,14 +687,12 @@ HealComm.Spells = {
 				local _,_,itemstring = string.find(GetInventoryItemLink("player",GetInventorySlotInfo("RangedSlot")), "|H(.+)|h")
 				local name = GetItemInfo(itemstring)
 				if name == L["Totem of Sustaining"] then
-					tp = 53
+					tp = 28
 				elseif name == L["Totem of Life"] then
-					tp = 80
+					tp = 40
 				end
 			end
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (175*pMod+tp+((1.5/3.5) * SpellPower))
+			return (175+tp+((1.5/3.5) * SpellPower))
 		end;
 		[2] = function (SpellPower)
 			local tp = 0
@@ -452,14 +700,12 @@ HealComm.Spells = {
 				local _,_,itemstring = string.find(GetInventoryItemLink("player",GetInventorySlotInfo("RangedSlot")), "|H(.+)|h")
 				local name = GetItemInfo(itemstring)
 				if name == L["Totem of Sustaining"] then
-					tp = 53
+					tp = 28
 				elseif name == L["Totem of Life"] then
-					tp = 80
+					tp = 40
 				end
 			end
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (265*pMod+tp+((1.5/3.5) * SpellPower))
+			return (265+tp+((1.5/3.5) * SpellPower))
 		end;
 		[3] = function (SpellPower)
 			local tp = 0
@@ -467,14 +713,12 @@ HealComm.Spells = {
 				local _,_,itemstring = string.find(GetInventoryItemLink("player",GetInventorySlotInfo("RangedSlot")), "|H(.+)|h")
 				local name = GetItemInfo(itemstring)
 				if name == L["Totem of Sustaining"] then
-					tp = 53
+					tp = 28
 				elseif name == L["Totem of Life"] then
-					tp = 80
+					tp = 40
 				end
 			end
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (360*pMod+tp+((1.5/3.5) * SpellPower))
+			return (360+tp+((1.5/3.5) * SpellPower))
 		end;
 		[4] = function (SpellPower)
 			local tp = 0
@@ -482,14 +726,12 @@ HealComm.Spells = {
 				local _,_,itemstring = string.find(GetInventoryItemLink("player",GetInventorySlotInfo("RangedSlot")), "|H(.+)|h")
 				local name = GetItemInfo(itemstring)
 				if name == L["Totem of Sustaining"] then
-					tp = 53
+					tp = 28
 				elseif name == L["Totem of Life"] then
-					tp = 80
+					tp = 40
 				end
 			end
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (487*pMod+tp+((1.5/3.5) * SpellPower))
+			return (487+tp+((1.5/3.5) * SpellPower))
 		end;
 		[5] = function (SpellPower)
 			local tp = 0
@@ -497,14 +739,12 @@ HealComm.Spells = {
 				local _,_,itemstring = string.find(GetInventoryItemLink("player",GetInventorySlotInfo("RangedSlot")), "|H(.+)|h")
 				local name = GetItemInfo(itemstring)
 				if name == L["Totem of Sustaining"] then
-					tp = 53
+					tp = 28
 				elseif name == L["Totem of Life"] then
-					tp = 80
+					tp = 40
 				end
 			end
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (669*pMod+tp+((1.5/3.5) * SpellPower))
+			return (669+tp+((1.5/3.5) * SpellPower))
 		end;
 		[6] = function (SpellPower)
 			local tp = 0
@@ -512,31 +752,23 @@ HealComm.Spells = {
 				local _,_,itemstring = string.find(GetInventoryItemLink("player",GetInventorySlotInfo("RangedSlot")), "|H(.+)|h")
 				local name = GetItemInfo(itemstring)
 				if name == L["Totem of Sustaining"] then
-					tp = 53
+					tp = 28
 				elseif name == L["Totem of Life"] then
-					tp = 80
+					tp = 40
 				end
 			end
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (881*pMod+tp+((1.5/3.5) * SpellPower))
+			return (881+tp+((1.5/3.5) * SpellPower))
 		end;
 	};
 	[L["Chain Heal"]] = {
 		[1] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (344*pMod+((2.5/3.5) * SpellPower))
+			return (344+((2.5/3.5) * SpellPower))
 		end;
 		[2] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (435*pMod+((2.5/3.5) * SpellPower))
+			return (435+((2.5/3.5) * SpellPower))
 		end;
 		[3] = function (SpellPower)
-			local _,_,_,_,talentRank,_ = GetTalentInfo(3,14)
-			local pMod = 2*talentRank/100 + 1
-			return (591*pMod+((2.5/3.5) * SpellPower))
+			return (591+((2.5/3.5) * SpellPower))
 		end;
 	};
 	[L["Lesser Heal"]] = {
@@ -882,8 +1114,8 @@ local healcommTip = CreateFrame("GameTooltip", "healcommTip", nil, "GameTooltipT
 healcommTip:SetOwner(WorldFrame, "ANCHOR_NONE")
 
 HealComm.Buffs = {
-	[L["Power Infusion"]] = {amount = 0, mod = 0.2, icon = "Interface\\Icons\\Spell_Holy_PowerInfusion"};
-	[L["Divine Favor"]] = {amount = 0, mod = 0.5, icon = "Interface\\Icons\\Spell_Holy_Heal"};
+	--[L["Power Infusion"]] = {amount = 0, mod = 0.2, icon = "Interface\\Icons\\Spell_Holy_PowerInfusion"}; deleted on twow
+	--[L["Divine Favor"]] = {amount = 0, mod = 0.5, icon = "Interface\\Icons\\Spell_Holy_Heal"}; deleted on twow
 	[L["Nature Aligned"]] = {amount = 0, mod = 0.2, icon = "Interface\\Icons\\Spell_Nature_SpiritArmor"};
 	[L["Crusader's Wrath"]] = {amount = 95, mod = 0, icon = "Interface\\Icons\\Spell_Nature_GroundingTotem"};
 	[L["The Furious Storm"]] = {amount = 95, mod = 0, icon = "Interface\\Icons\\Spell_Nature_CallStorm"};
@@ -965,13 +1197,14 @@ function HealComm:GetUnitSpellPower(unit, spell)
 		if buffName == L["Blessing of Light"] then
 			local HLBonus, FoLBonus = strmatch(healcommTipTextLeft2:GetText(),"(%d+).-(%d+)")
 			if (spell == L["Flash of Light"]) then
-				targetpower = FoLBonus + targetpower
+				targetpower = FoLBonus *1.5/3.5 + targetpower
 			elseif spell == L["Holy Light"] then
-				targetpower = HLBonus + targetpower
+				targetpower = (HLBonus+FoLBonus) *2.5/3.5 + targetpower
 			end
-		end
-		if buffName == L["Healing Way"] and spell == L["Healing Wave"] then
+		elseif buffName == L["Healing Way"] and ( spell == L["Healing Wave"] or spell == L["Chain Heal"]) then
 			targetmod = targetmod * ((buffApplications * 0.06) + 1)
+		elseif buffName == "Daybreak" and (spell == L["Holy Light"] or spell == L["Flash of Light"])then
+			targetmod = targetmod * (1.2)
 		end
 	end
 	for i=1, 16 do
@@ -1108,6 +1341,7 @@ function HealComm:SPELLCAST_START()
 		local targetpower, targetmod = self.SpellCastInfo[4], self.SpellCastInfo[5]
 		local Bonus = Bonus + buffpower
 		local amount = ((math.floor(self.Spells[self.SpellCastInfo[1]][tonumber(self.SpellCastInfo[2])](Bonus))+targetpower)*buffmod*targetmod)
+--		print("HealComm predicts: "..amount.." Crit: "..1.5*amount)
 		if arg1 == L["Prayer of Healing"] then
 			local targets = {UnitName("player")}
 			local targetsstring = UnitName("player").."/"

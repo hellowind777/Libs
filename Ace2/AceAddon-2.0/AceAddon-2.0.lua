@@ -11,7 +11,7 @@ Dependencies: AceLibrary, AceOO-2.0, AceEvent-2.0, (optional) AceConsole-2.0
 ]]
 
 local MAJOR_VERSION = "AceAddon-2.0"
-local MINOR_VERSION = "$Revision: 17957 $"
+local MINOR_VERSION = "$Revision: 17958 $"
 
 -- This ensures the code is only executed if the libary doesn't already exist, or is a newer version
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary.") end
@@ -79,6 +79,57 @@ if GetLocale() == "deDE" then
 		["Raid"] = "Schlachtzug",
 		["Tradeskill"] = "Handelsf\195\164higkeit",
 		["UnitFrame"] = "UnitFrame",
+	}
+elseif GetLocale() == "esES" then
+	STANDBY = "|cffff5050(Espera)|r"
+	
+	TITLE = "T\195\173tulo"
+	NOTES = "Notas"
+	VERSION = "Versi\195\179n"
+	AUTHOR = "Autor"
+	DATE = "Fecha"
+	CATEGORY = "Categor\195\173a"
+	EMAIL = "E-mail"
+	WEBSITE = "Sitio de Web"
+	
+	ABOUT = "Sobre"
+	PRINT_ADDON_INFO = "Publica informaci\195\179n sobre addon"
+	
+	CATEGORIES = {
+		["Action Bars"] = "Barras de Acci\195\179n",
+		["Auction"] = "Subasta",
+		["Audio"] = "Audio",
+		["Battlegrounds/PvP"] = "Campos de Batalla/JcJ",
+		["Buffs"] = "Buffs",
+		["Chat/Communication"] = "Chat/Communicaci\195\179n",
+		["Druid"] = "Druida",
+		["Hunter"] = "Cazador",
+		["Mage"] = "Mago",
+		["Paladin"] = "Palad\195\173n",
+		["Priest"] = "Sacerdote",
+		["Rogue"] = "P\195\173caro",
+		["Shaman"] = "Cham\195\161n",
+		["Warlock"] = "Brujo",
+		["Warrior"] = "Guerrero",
+		["Healer"] = "Sanador",
+		["Tank"] = "Tanque",
+		["Caster"] = "Hechicero",
+		["Combat"] = "Combate",
+		["Compilations"] = "Compilaciones",
+		["Data Export"] = "Exporta de Datos",
+		["Development Tools"] = "Herramientas de Desarrollo",
+		["Guild"] = "Hermandad",
+		["Frame Modification"] = "Modificaci\195\179n del marco",
+		["Interface Enhancements"] = "Mejora de Interfaz",
+		["Inventory"] = "Inventario",
+		["Library"] = "Biblioteca",
+		["Map"] = "Mapa",
+		["Mail"] = "Correo",
+		["Miscellaneous"] = "Diverso",
+		["Quest"] = "Misi\195\179n",
+		["Raid"] = "Banda",
+		["Tradeskill"] = "Habilidad de Comercio", 
+		["UnitFrame"] = "Marco de Unidad", 
 	}
 elseif GetLocale() == "frFR" then
 	STANDBY = "|cffff5050(attente)|r"
@@ -344,57 +395,6 @@ elseif GetLocale() == "ruRU" then
 		["Raid"] = "Рейд",
 		["Tradeskill"] = "Умения",
 		["UnitFrame"] = "Фреймы персонажей",
-	}
-elseif GetLocale() == "esES" then
-	STANDBY = "|cffff5050(Espera)|r"
-	
-	TITLE = "T\195\173tulo"
-	NOTES = "Notas"
-	VERSION = "Versi\195\179n"
-	AUTHOR = "Autor"
-	DATE = "Fecha"
-	CATEGORY = "Categor\195\173a"
-	EMAIL = "E-mail"
-	WEBSITE = "Sitio de Web"
-	
-	ABOUT = "Sobre"
-	PRINT_ADDON_INFO = "Publica informaci\195\179n sobre addon"
-	
-	CATEGORIES = {
-		["Action Bars"] = "Barras de Acci\195\179n",
-		["Auction"] = "Subasta",
-		["Audio"] = "Audio",
-		["Battlegrounds/PvP"] = "Campos de Batalla/JcJ",
-		["Buffs"] = "Buffs",
-		["Chat/Communication"] = "Chat/Communicaci\195\179n",
-		["Druid"] = "Druida",
-		["Hunter"] = "Cazador",
-		["Mage"] = "Mago",
-		["Paladin"] = "Palad\195\173n",
-		["Priest"] = "Sacerdote",
-		["Rogue"] = "P\195\173caro",
-		["Shaman"] = "Cham\195\161n",
-		["Warlock"] = "Brujo",
-		["Warrior"] = "Guerrero",
-		["Healer"] = "Sanador",
-		["Tank"] = "Tanque",
-		["Caster"] = "Hechicero",
-		["Combat"] = "Combate",
-		["Compilations"] = "Compilaciones",
-		["Data Export"] = "Exporta de Datos",
-		["Development Tools"] = "Herramientas de Desarrollo",
-		["Guild"] = "Hermandad",
-		["Frame Modification"] = "Modificaci\195\179n del marco",
-		["Interface Enhancements"] = "Mejora de Interfaz",
-		["Inventory"] = "Inventario",
-		["Library"] = "Biblioteca",
-		["Map"] = "Mapa",
-		["Mail"] = "Correo",
-		["Miscellaneous"] = "Diverso",
-		["Quest"] = "Misi\195\179n",
-		["Raid"] = "Banda",
-		["Tradeskill"] = "Habilidad de Comercio", 
-		["UnitFrame"] = "Marco de Unidad", 
 	}
 else -- enUS
 	STANDBY = "|cffff5050(standby)|r"

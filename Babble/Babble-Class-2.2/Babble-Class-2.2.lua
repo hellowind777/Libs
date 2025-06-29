@@ -41,6 +41,15 @@ BabbleClass:RegisterTranslations("enUS", function()
 		["Paladin"] = true,
 		["Shaman"] = true,
 		["Rogue"] = true,
+		["WARLOCK"] = true,
+		["WARRIOR"] = true,
+		["HUNTER"] = true,
+		["MAGE"] = true,
+		["PRIEST"] = true,
+		["DRUID"] = true,
+		["PALADIN"] = true,
+		["SHAMAN"] = true,
+		["ROGUE"] = true,
 	}
 end)
 
@@ -111,6 +120,15 @@ BabbleClass:RegisterTranslations("zhCN", function()
 		["Paladin"] = "圣骑士",
 		["Shaman"] = "萨满祭司",
 		["Rogue"] = "盗贼",
+		["WARLOCK"] = "术士",
+		["WARRIOR"] = "战士",
+		["HUNTER"] = "猎人",
+		["MAGE"] = "法师",
+		["PRIEST"] = "牧师",
+		["DRUID"] = "德鲁伊",
+		["PALADIN"] = "圣骑士",
+		["SHAMAN"] = "萨满祭司",
+		["ROGUE"] = "盗贼",
 	}
 end)
 

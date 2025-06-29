@@ -231,20 +231,7 @@ function string.reverse(str)
 end
 strrev = string.reverse
 
-function string.split(delimiter, str)
-	if type(delimiter) ~= "string" and type(delimiter) ~= "number" then
-		error(format("bad argument #1 to 'split' (string expected, got %s)", delimiter and type(delimiter) or "no value"), 2)
-	elseif type(str) ~= "string" and type(str) ~= "number" then
-		error(format("bad argument #2 to 'split' (string expected, got %s)", str and type(str) or "no value"), 2)
-	end
-
-	local fields = {}
-	gsub(str, format("([^%s]+)", delimiter), function(c) fields[getn(fields) + 1] = c end)
-
-	return unpack(fields)
-end
-strsplit = string.split
-
+--去除字符串首尾的空格
 local escapeSequences = {
 	["\a"] = "\\a", -- Bell
 	["\b"] = "\\b", -- Backspace
@@ -317,12 +304,37 @@ function string.trim(str, chars)
 		return str
 	elseif type(str) == "string" then
 		-- remove leading/trailing [space][tab][return][newline]
-		return gsub(str, "^%s*(.-)%s*$", "%1")
+        local result, _ = string.gsub(str, "^%s*(.-)%s*$", "%1")
+        return result
 	else
 		return tostring(str)
 	end
 end
 strtrim = string.trim
+
+--分割函数
+function string.split(subject, delimiter, trim)
+    if not subject then return nil end
+    local fields = {}
+    local start = 1
+
+    repeat
+        local b, e = string.find(subject, delimiter, start)
+        if b == nil then
+            local sub = string.sub(subject, start)
+            table.insert(fields, trim and strtrim(sub) or sub)
+            return fields
+        end
+		if b > 1 then
+            local sub = string.sub(subject, start, b - 1)
+            table.insert(fields, trim and strtrim(sub) or sub)
+		else
+            table.insert(fields, "")
+        end
+		start = e + 1
+    until false
+end
+strsplit = string.split
 
 function strconcat(...)
 	if arg.n == 0 then
@@ -471,4 +483,17 @@ function HexColors(r, g, b)
 	end
 	
 	return format("|cff%02x%02x%02x", r*255, g*255, b*255)
+end
+--新增SuperWow载入判定
+function CheckSuperWow()
+	if SUPERWOW_STRING then
+		return true
+	else
+		return false
+	end
+end
+--新增UnitXP_SP3载入判定
+function CheckUnitXP_SP3()
+	local UnitXP_SP3 = pcall(UnitXP, "nop", "nop")
+	return UnitXP_SP3
 end

@@ -119,8 +119,8 @@ L:RegisterTranslations("enUS", function () return {
 		{ pattern = "Increases your normal health and mana regeneration by (%d+)%.", effect = "MANAREGNORMAL"},
 		{ pattern = "Increases the amount healed by Chain Heal to targets beyond the first by (%d+)%%%.", effect = "IMPCHAINHEAL"},
 		{ pattern = "Increases healing done by Rejuvenation by up to (%d+)%.", effect = "IMPREJUVENATION"},
-		{ pattern = "Increases healing done by Lesser Healing Wave by up to (%d+)%.", effect = "IMPLESSERHEALINGWAVE"},
-		{ pattern = "Increases healing done by Flash of Light by up to (%d+)%.", effect = "IMPFLASHOFLIGHT"},
+		{ pattern = "Increases healing done by Lesser Healing Wave by (%d+)%.", effect = "IMPLESSERHEALINGWAVE"},
+		{ pattern = "Increases healing done by Flash of Light by (%d+)%.", effect = "IMPFLASHOFLIGHT"},
 		{ pattern = "After casting your Healing Wave or Lesser Healing Wave spell%, gives you a 25%% chance to gain Mana equal to (%d+)%% of the base cost of the spell%.", effect = "REFUNDHEALINGWAVE"},
 		{ pattern = "Your Healing Wave will now jump to additional nearby targets%. Each jump reduces the effectiveness of the heal by (%d+)%%%, and the spell will jump to up to two additional targets%.", effect = "JUMPHEALINGWAVE"},
 		{ pattern = "Reduces the mana cost of your Healing Touch%, Regrowth%, Rejuvenation and Tranquility spells by (%d+)%%%.", effect = "CHEAPERDRUID"},
@@ -152,7 +152,7 @@ L:RegisterTranslations("enUS", function () return {
 
 		["Attack Power"] 		= "ATTACKPOWER",
 		["Attack Power when fighting Undead"] 		= "ATTACKPOWERUNDEAD",
-		["Attack Power in Cat, Bear, and Dire Bear forms only"] = "ATTACKPOWERFERAL",
+		["Attack Power in Cat, Bear, Dire Bear, and Moonkin forms only"] = "ATTACKPOWERFERAL",
 
 		["Dodge"] 				= "DODGE",
 		["Block"]				= "BLOCK",
@@ -215,6 +215,11 @@ L:RegisterTranslations("enUS", function () return {
 		{ pattern = "Stamina %+16 and Armor %+100", effect = { "STA", "ARMOR"}, value = {16, 100} },
 		{ pattern = "Attack Power %+26 and %+1%% Critical Strike", effect = { "ATTACKPOWER", "CRIT"}, value = {26, 1} },
 		{ pattern = "Spell Damage %+15 and %+1%% Spell Critical Strike", effect = { "DMG", "HEAL", "SPELLCRIT"}, value = {15, 15, 1} },
-
+		
+		--Twow new Ring echants
+		{ pattern = "Healing %+12", effect = { "HEAL"}, value = {12} },
+		
+		--twow new t3 flash of light set bonus
+		{ pattern = "Increases the amount healed by your Judgement of Light by 20 and Flash of Light by 60.", effect = { "IMPFLASHOFLIGHT"}, value = {60}},
 	}
 } end)

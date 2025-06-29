@@ -539,12 +539,32 @@ function TarDebuff(aura)
 		end
 		i = i + 1
 	end	
-	
-	return false
+	if TarBuff(aura) then
+        return true
+    else
+	    return false
+    end
 end
 
-function IsBuffActive(unit, aura)
+function IsBuffActive(aura, unit)
+    unit=unit or "player"
 	return UnitHasAura(unit, aura)
+end
+
+function GetPlayerAuraIndex(aura)
+    aura = strlower(aura)
+    auratooltip:SetOwner(UIParent, "ANCHOR_NONE")
+	for i = 0, 64 do
+		auratooltip:ClearLines()
+		auratooltip:SetPlayerBuff(i)
+		local name = auratooltipTextLeft1:GetText()
+		if name then
+			if strfind(strlower(name), aura) then
+				return i
+			end
+		end
+    end
+    return nil
 end
 --------------------------------
 --      Load this bitch!      --

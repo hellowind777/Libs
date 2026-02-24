@@ -1,6 +1,5 @@
 # !libs
 !libs是《魔兽世界》的一款函数插件，是用于插件的共享函数库。<br>
-此修改版本适用于1.17.2补丁及其内容。
 
 ## 如何安装
 您可以将仓库克隆到您的WoW/Interface/AddOns文件夹中，或者通过github手动下载（点击Clone或Download -> Download ZIP。请记得之后要将目录重命名为“!libs”（注意前面有个英文小写感叹号!）。<br>
